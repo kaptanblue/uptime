@@ -1,1 +1,1 @@
-# uptime
+**Bu Altyapı  Bow Beye Aittir Çalan Ban Yer**
