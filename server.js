@@ -6,33 +6,6 @@ const fetch = require("node-fetch");
 const fs = require("fs");
 require("express")().listen(1343);
 
-client.on("message", message => {
-  if (message.author.bot) return;
-  var spl = message.content.split(" ");
-  if (spl[0] == "o.token") {
-    var link = spl[1];
-    message.channel.send('**Lan SG Token İsteme**');
-  }
-});
-
-client.on("message", message => {
-  if (message.author.bot) return;
-  var spl = message.content.split(" ");
-  if (spl[0] == "sa") {
-    var link = spl[1];
-    message.channel.send('**Aleyküm Selam Kardeşim.**');
-  }
-});
-
-client.on("message", message => {
-  if (message.author.bot) return;
-  var spl = message.content.split(" ");
-  if (spl[0] == "as") {
-    var link = spl[1];
-    message.channel.send('**Aleyküm Selam Kardeşim.**');
-  }
-});
-
 //UPTİME
 
 const express = require("express");
@@ -55,7 +28,7 @@ client.on("ready", () => {
 
   client.user.setPresence({
     activity: {
-      name: "www.bowbot.cf",
+      name: "www.unturnedturkey.ml",
       type: "WATCHING",
       url: "https://ping405.glitch.me/"
     }
@@ -85,7 +58,7 @@ client.on("ready", () => {
 client.on("message", message => {
   if (message.author.bot) return;
   var spl = message.content.split(" ");
-  if (spl[0] == "o.") {
+  if (spl[0] == "v.") {
     var link = spl[1];
     fetch(link)
       .then(() => {
@@ -108,7 +81,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.author.bot) return;
   var spl = message.content.split(" ");
-  if (spl[0] == "j.göster") {
+  if (spl[0] == "v.göster") {
     var link = spl[1];
     message.channel.send(new discord.MessageEmbed().setFooter("JET").setColor("RED").setDescription(`${db.get("linkler").length} Proje Aktif Tutuluyor!`));
   }
@@ -136,7 +109,7 @@ const help = new discord.MessageEmbed()
 client.on("message", message => {
   if (message.author.bot) return;
   var spl = message.content.split(" ");
-  if (spl[0] == "o.help") {
+  if (spl[0] == "v.help") {
     var link = spl[1];
     message.channel.send(help);
     }
@@ -158,7 +131,7 @@ const yapımcım = new discord.MessageEmbed()
 client.on("message", message => {
   if (message.author.bot) return;
   var spl = message.content.split(" ");
-  if (spl[0] == "o.partner") {
+  if (spl[0] == "v.partner") {
     var link = spl[1];
     message.channel.send(partner);
     }
@@ -167,7 +140,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.author.bot) return;
   var spl = message.content.split(" ");
-  if (spl[0] == "o.yapımcım") {
+  if (spl[0] == "v.yapımcım") {
     var link = spl[1];
     message.channel.send(yapımcım);
     }
